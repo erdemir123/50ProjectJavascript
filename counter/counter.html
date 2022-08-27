@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>COUNTER</h1>
+        <span id="value">0</span>
+        <div class="button-container">
+          <button class="btn decrease">decrease</button>
+          <button class="btn reset">reset</button>
+          <button class="btn increase">ıncrease</button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // 3 çözümüde aşağıda yaptım
+      let count = 0;
+      let value = document.getElementById("value");
+      // let btns = document.querySelector(".decrease");
+      let btnc= document.querySelectorAll(".btn");
+      // let btn1 = document.querySelector(".increase");
+      // let btnr = document.querySelector(".reset");
+
+      btnc.forEach(function(btn){
+        console.log(btn)
+      })
+
+      btnc.forEach(function(btn){
+        btn.addEventListener("click", () =>{
+          if(btn.classList.contains("decrease")){
+            count--
+            value.style.color="pink"
+          }
+          else if(btn.classList.contains("increase")){
+            count++     
+            value.style.color="orange"       
+          }
+          else if(btn.classList.contains("reset")){
+            count= 0
+            value.style.color="aqua"
+          }
+          value.innerHTML = count
+          
+        })
+      })
+      
+      
+      // btns.addEventListener("click" , function(){
+      //   count--
+      //   value.innerHTML = count;
+
+      // })
+      // btn1.addEventListener("click" , function(){
+      //   count++
+      //   value.innerHTML = count;
+
+      // })
+      // btnr.addEventListener("click" , function(){
+      //   count = 0
+      //   value.innerHTML = count;
+
+      // })
+
+
+
+
+      // btns.forEach(function (btn) {
+      //   console.log(btn.classList)
+      //   btn.addEventListener("click", (e) => {
+      //     const style = e.target.classList;
+      //     if (style.contains("decrease")) {
+      //       count--;
+      //       console.log(style.contains("increase"));
+      //     } else if (style.contains("increase")) {
+      //       count++;
+      //     }
+          // value.innerHTML = count;
+      //   });
+      // });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Uygulamalı Javascript Dersleri</h1>
+        <img src="" alt="" name="slide" >
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let i = 0;
+        let images =[
+            "https://picsum.photos/400/400",
+            "https://picsum.photos/seed/picsum/400/400",
+            "https://picsum.photos/400/400",
+            "https://picsum.photos/400/400"];
+            var duration = 500;
+
+function slideimg(){
+    if (i<images.length-1){
+        document.slide.src = images[i];
+        i++;
+    }
+    else(
+        i= 0
+    )
+    setTimeout("slideimg()", duration)
+}
+  
+window.onload =slideimg()
+
+
+
+    </script>
+</body>
+</html>

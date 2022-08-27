@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <img src="./images/resim1.jpg" alt="" id="comple">    
+    <div class="image-container">
+        <img src="./images/resim1.jpg" alt="" onclick="imgSlider('./images/resim1.jpg')">
+        <img src="./images/resim2.jpg" alt="" onclick="imgSlider('./images/resim2.jpg')">
+        <img src="./images/resim3.jpg" alt="" onclick="imgSlider('./images/resim3.jpg')">
+        <img src="./images/resim4.jpg" alt="" onclick="imgSlider('./images/resim4.jpg')">
+        <img src="./images/resim5.jpg" alt="" onclick="imgSlider('./images/resim5.jpg')">       
+    </div>
+
+
+    <script>
+        function imgSlider(anything){
+            document.getElementById("comple").src = anything;
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.container h1 {
+  font-size: 40px;
+}
+.container span {
+  font-size: 80px;
+  font-weight: bolder;
+}
+.container button {
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
