@@ -1,0 +1,162 @@
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+   width: 100vw;
+   min-height: 100vh;
+   background:url(resim.jpg) ;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-items: center;
+   margin-top: 5vh;
+}
+
+.container {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+}
+
+.todo_form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 15px 20px;
+   border-radius: 8px;
+   margin-top: 32px;
+   background-color: antiquewhite;
+}
+
+.todo_title {
+   font-size: 2.5rem;
+   color: rgb(142, 118, 87);
+}
+
+.todo_div {
+   display: flex;
+   margin-top: 16px;
+}
+
+.todo_input {
+   padding: 6px 8px;
+   font-size: 0.9rem;
+   border-radius: 4px 0 0 4px;
+   border: none;
+   outline: none;
+   background-color: rgb(192, 188, 183);
+}
+
+.todo_btn {
+   padding: 6px 8px;
+   font-size: 0.9rem;
+   border-radius: 0 4px 4px 0;
+   border: none;
+   outline: none;
+   background-color: aliceblue;
+   cursor: pointer;
+   transition: 0.3s ease all;
+}
+
+.todo_btn:hover {
+   background-color: rgb(208, 225, 240);
+}
+
+.todo_container {
+   display: flex;
+   flex-direction: column;
+   padding: 15px 20px;
+   border-radius: 8px;
+   margin-top: 16px;
+   background-color: antiquewhite;
+}
+
+.todo {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 8px 0;
+   border-bottom: 1px solid rgb(228, 203, 171);
+}
+
+.todo:last-child { 
+   border: none;
+}
+
+.todo_left {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.todo_editInput {
+   position: absolute;
+   padding: 6px 8px;
+   font-size: 0.9rem;
+   border-radius: 4px 0 0 4px;
+   border: none;
+   outline: none;
+   opacity: 0;
+   pointer-events: none;
+}
+
+.todo_text, .todo_edit {
+   margin-left: 8px;
+}
+
+.todo_cb:checked ~ .todo_text {
+   text-decoration: line-through;
+   color: gray;
+}
+
+.todo_right {
+   position: relative;
+}
+
+.todo_delete {
+   background-color: tomato;
+   padding: 6px 8px;
+   font-size: 0.9rem;
+   color: white;
+   border-radius: 4px 4px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: 0.3s ease all;
+}
+
+.todo_delete:hover {
+   background-color: rgb(255, 117, 93);
+}
+
+.todo_edit {
+   background-color: rgb(61, 224, 116);
+   padding: 6px 8px;
+   font-size: 0.9rem;
+   color: white;
+   border-radius: 4px 4px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: 0.3s ease all;
+}
+
+.todo_edit:hover {
+   background-color: rgb(53, 192, 99);
+}
+@media (max-width:700px) {
+   .container{
+      width: 70%;
+   }
+   body{
+      background-color: red;
+   }
+}
