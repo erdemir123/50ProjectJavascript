@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #8cccff;
+}
+.box{
+    position: relative;
+    width: 300px;
+
+}
+.box .inputBox{
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.box .inputBox input{
+    position: relative;
+    width:100%;
+    outline: none;
+    border: none;
+    height: 100%;
+    text-indent: .5rem;
+    padding: 10px 5px;
+}
+.box .inputBox .toggleBtn{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    background: rgba(0,0,0,0.05);
+    transform: translate(0,-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#show{
+    display: none;
+}
+.validation{
+    background: #376488;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.validation ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.validation ul li{
+    position: relative;
+    list-style: none;
+    color: #fdfdfd;
+    font-size: .85em;
+    transition:.5s;
+
+}
+.validation ul li i{
+    color: antiquewhite;
+}
+#lower .fa-solid.fa-circle-check{
+    display: none;
+}
+#lower.active .fa-circle-check{
+    display: inline-block;
+}
+#lower.active .fa-circle-xmark{
+    display: none;
+}
+#upper .fa-solid.fa-circle-check{
+    display: none;
+}
+#upper.active .fa-circle-check{
+    display: inline-block;
+}
+#upper.active .fa-circle-xmark{
+    display: none;
+}
+#number .fa-solid.fa-circle-check{
+    display: none;
+}
+#number.active .fa-circle-check{
+    display: inline-block;
+}
+#number.active .fa-circle-xmark{
+    display: none;
+}
+#specialy .fa-solid.fa-circle-check{
+    display: none;
+}
+#specialy.active .fa-circle-check{
+    display: inline-block;
+}
+#specialy.active .fa-circle-xmark{
+    display: none;
+}
+#length .fa-solid.fa-circle-check{
+    display: none;
+}
+#length.active .fa-circle-check{
+    display: inline-block;
+}
+#length.active .fa-circle-xmark{
+    display: none;
+}

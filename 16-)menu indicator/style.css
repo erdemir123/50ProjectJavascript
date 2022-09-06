@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+}
+ul{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul li{
+    list-style-type: none;
+
+}
+ul li a{
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+#marker{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 50px;
+    /* background: #f00; */
+    transition: .6s;
+
+}
+#marker:before{
+    content: "👉";
+    position: absolute;
+    left: -45px;
+    top: -5px;
+    font-size: 2rem;
+}
+#marker:after{
+    content: "👈";
+    position: absolute;
+    right: -45px;
+    top: -5px;
+    font-size: 2rem;
+}

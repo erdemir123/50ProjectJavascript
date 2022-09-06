@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: url(1594397760phpNqvpN7.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: none;
+    
+    
+}
+#cursor{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(1594397760phpNqvpN7.jpeg);
+    background-attachment:fixed;
+    border-radius: 50%;
+    
+    /* transform: translateY(-50%); */
+    /* translate: transform(50%,50%); */
+
+}

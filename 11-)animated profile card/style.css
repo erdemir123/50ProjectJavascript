@@ -1,0 +1,110 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card-container{
+    position: relative;
+}
+.card{
+    position: relative;
+    width: 350px;
+    height: 90px;
+    background: #398cc0;
+    border-radius: 20px;
+    filter: drop-shadow(-20px 20px 40px #398cc077);
+    transition: all 2s;
+    overflow: hidden;
+    z-index: 132;
+ 
+}
+.card.active{
+    height: 420px;
+}
+.toggle{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70px;
+    height: 60px;
+    background-color:#398cc0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+}
+.toggle::before{
+    content:" ";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: -33px;
+    border-top-right-radius:35px ;
+    box-shadow: 11px -10px 0 10px #398cc0;
+    
+}
+.toggle::after{
+    content:" ";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: -33px;
+    border-top-left-radius:35px ;
+    box-shadow: -11px -10px 0 10px #398cc0;
+    background-color: transparent;
+    
+}
+span i{
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.span.active i{
+    transform: rotateX(180deg) translate(-9px);
+}
+.contentBx .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 12;
+}
+.contentBx .content h1{
+    font-size:30px;
+    color: #fff;
+}
+.contentBx .content h4{
+    font-size:1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.content .imgBx{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background:url(img/sadık.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content .btn{
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
