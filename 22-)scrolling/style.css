@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #1d212b;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section:nth-child(1){
+    color: #fff;
+}
+section:nth-child(2){
+    color: #1d1d1d;
+    background: #fff;
+}
+section:nth-child(3){
+    color:#fff;
+}
+section:nth-child(4){
+    color: #1d1d1d;
+    background: #fff
+}
+section .container{
+    margin: 100px;
+}
+section h1{
+    font-size: 60px;
+}
+section h2{
+    font-size: 60px;
+    text-align: center;
+    text-transform:uppercase ;
+}
+section .cards{
+    display: flex;
+}
+section .cards .text-card{
+    background: #2696e9;
+    margin: 20px;
+    padding: 20px;
+}
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+section .cards .text-card p{
+    text-align: center;
+    margin: 20px;
+}
+
+@media(max-width:900px){
+    section h1{
+        font-size: 40px;
+    }
+    section .cards{
+        flex-direction: column;
+    }
+}
+.reveal{
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 1s;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

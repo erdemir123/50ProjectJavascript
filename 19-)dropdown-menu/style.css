@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    min-height: 100vh;
+    background: #fafafa;
+}
+.dropdown{
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+.dropdown input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-indent: 1rem;
+
+}
+
+.dropdown .option{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 30px 30px rgba( 0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+   
+   
+}
+.dropdown.active .option{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    
+    
+
+}
+.dropdown .option div{
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    gap: 10px;
+}
+.dropdown .option div:hover{
+    background-color: #62baea;
+    color: #fff;
+}
+.dropdown .option div i{
+    margin-top: 2px;
+    font-size: 1.2rem;
+}
+.fa-solid{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translate(0 ,-50%);
+    transition: .3s;
+    display: block;
+}
+.fa-solid.active{
+    top: 40%;
+    transform: rotate(540deg);
+}
