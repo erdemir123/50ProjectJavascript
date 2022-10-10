@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 105, 39);
+    flex-direction: column;
+
+}
+.container{
+    width: 400px;
+    height: 400px;
+    max-width: 400px;
+    border-radius: 50%;
+    border: 5px solid #332;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background:url(./images/png-6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 108%;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+.merkez{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(146, 80, 54);
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    z-index: 123;
+    
+}
+.saniye{
+    width: 5px;
+    height: 180px;
+    background-color: rgb(131, 73, 73);
+    border-radius: 2px;
+    position: absolute;
+    left: calc(50% - 2.5px);
+    top:12.5px;
+    transform-origin: bottom;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+} 
+.yelkovan{
+    width: 5px;
+    height: 150px;
+    background-color: rgb(41, 25, 25);
+    border-radius: 2px;
+    position: absolute;
+    left: calc(50% - 2.5px);
+    top:42.5px;
+    transform-origin: bottom;
+    transform: rotate(288deg);
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+} 
+.akrep{
+    width: 5px;
+    height: 120px;
+    background-color: rgb(34, 135, 110);
+    border-radius: 2px;
+    position: absolute;
+    left: calc(50% - 2.5px);
+    top:72.5px;
+    transform-origin: bottom;
+    transform: rotate(300deg);
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+} 
